@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1256607062078205264, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
       propertyPath: m_ForceScale
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4217971226743714142, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
       propertyPath: m_ShapeTexture
@@ -3160,6 +3160,18 @@ PrefabInstance:
       value: -12.579254
       objectReference: {fileID: 0}
     - target: {fileID: 7575923764955731170, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575923764955731170, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575923764955731170, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575923764955731170, guid: 5f94b20b3febf7f45bb4059e0483adcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -217.46393
       objectReference: {fileID: 0}
@@ -3356,7 +3368,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 15
+    OrthographicSize: 17
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -3383,7 +3395,7 @@ Transform:
   m_GameObject: {fileID: 171297783}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -383.4, y: 285.1, z: -10}
+  m_LocalPosition: {x: -420.3, y: 292.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3496,7 +3508,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 17
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3521,7 +3533,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -383.4, y: 285.1, z: -10}
+  m_LocalPosition: {x: -420.3, y: 292.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3656,7 +3668,7 @@ GameObject:
   - component: {fileID: 1920237113}
   - component: {fileID: 1920237116}
   m_Layer: 0
-  m_Name: Post 2_0
+  m_Name: FinishLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3742,7 +3754,7 @@ Transform:
   m_GameObject: {fileID: 1920237112}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -115.91, y: 272.98, z: 0}
+  m_LocalPosition: {x: -95.18, y: 277.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3827,9 +3839,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDamping: 0
-  m_AngularDamping: 10
+  m_AngularDamping: 7
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3851,7 +3863,7 @@ Transform:
   m_GameObject: {fileID: 2026699262}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -405.4, y: 285.1, z: 0}
+  m_LocalPosition: {x: -442.3, y: 292.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4760,7 +4772,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5232,12 +5244,12 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 30
+  m_Speed: 35
   m_SpeedVariation: 0
   m_ForceScale: 1
-  m_UseContactForce: 0
-  m_UseFriction: 1
-  m_UseBounce: 0
+  m_UseContactForce: 1
+  m_UseFriction: 0
+  m_UseBounce: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
